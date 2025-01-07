@@ -12,7 +12,7 @@ Bookshelf is a personal library management system that helps you organize and ke
 
 ## Demo
 
-Below are some demo images showing how the application looks and works. Replace the placeholder links with your actual OneDrive image links.
+Below are some demo images showing how the application looks and works. 
 
 ![Demo Image 1](https://drive.google.com/uc?export=view&id=1TtPdBYuQ8FPPmiIr3CPGkFXu8li8h9Z4)
 ![Demo Image 2](https://drive.google.com/uc?export=view&id=1mURvdoSR-pabmnnBQ6oNeHpMBooR-18t)
