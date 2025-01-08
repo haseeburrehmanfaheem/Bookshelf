@@ -14,6 +14,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
+const cors = require('cors');
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://YOUR-NETLIFY-SITE.netlify.app'],
+  credentials: true,  // if you need cookies/auth
+}));
 
 if (process.env.NODE_ENV === "developement") {
   app.use(morgan("dev"));
