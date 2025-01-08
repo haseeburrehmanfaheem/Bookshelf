@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import api from '../../services/apis';
 import { Helmet } from 'react-helmet';
 import { Input, Stack, Select, Image, Link } from "@chakra-ui/react"
 import {RiShoppingCart2Line} from "react-icons/all"
@@ -66,7 +67,7 @@ const Checkout = ({history}) => {
 
         cart.cartItems.map(async (singleItem, index) => {
             dispatch(removeFromCart(singleItem.product))
-            let {data} = await axios.get(`/api/products/${singleItem.product}`)
+            let {data} = await api.get(`/api/products/${singleItem.product}`)
             console.log("hehe");
             console.log(singleItem);
             console.log("hoho");

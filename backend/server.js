@@ -16,7 +16,7 @@ connectDB();
 const app = express();
 const cors = require('cors');
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://YOUR-NETLIFY-SITE.netlify.app'],
+  origin: ['http://localhost:3000', 'https://bookshelf2314.netlify.app/'],
   credentials: true,  // if you need cookies/auth
 }));
 

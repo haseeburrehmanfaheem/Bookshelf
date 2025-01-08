@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import axios from "axios";
+import api from '../../services/apis';
 import { PayPalButton } from 'react-paypal-button-v2';
 import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet';
@@ -37,7 +38,7 @@ const Order = ({match,history}) => {
             history.push('/login')
         }
         const addPaypalscript = async () =>{
-            const {data : clientId} = await axios.get('/api/config/paypal ') 
+            const {data : clientId} = await api.get('/api/config/paypal ') 
             const script = document.createElement('script')
             script.type = 'text/javascript'
             script.async = true
