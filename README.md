@@ -25,7 +25,7 @@ Below are some demo images showing how the application looks and works.
 
 ## Installation
 
-To install and run Bookshelf, follow these steps:
+To install and run Bookshelf locally, follow these steps:
 
 1. Clone the repository:
     ```bash
